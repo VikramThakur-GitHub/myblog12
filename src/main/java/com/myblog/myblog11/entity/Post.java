@@ -7,10 +7,11 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name="Posts")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class Post {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,4 +19,6 @@ public class Post {
     private String title;
     private String content;
     private String description;
+
+
 }
