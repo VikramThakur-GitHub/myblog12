@@ -57,8 +57,8 @@ public class TestClass1 {
 
         List<Integer> list = Arrays.asList(2,4,3,5,7,9,11,32);
 
-        List<Integer> EvenNum = list.stream().filter(n -> n % 2 == 0).toList();
-        List<Integer> squared = EvenNum.stream().map(n -> n * n).toList();
+        List<Integer> EvenNum = list.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
+        List<Integer> squared = EvenNum.stream().map(n -> n * n).collect(Collectors.toList());
         Optional<Integer> sum = squared.stream().reduce(Integer::sum);
 
         for(Integer i: EvenNum){
