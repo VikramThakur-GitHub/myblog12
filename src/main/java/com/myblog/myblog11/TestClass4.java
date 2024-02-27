@@ -2,7 +2,7 @@ package com.myblog.myblog11;
 
 public class TestClass4 {
     public static void main(String[] args) {
-        String str ="aa bb aaa c ab";
+        String str ="aa aaa bbbb ccccc ";
         int length= str.length();
         int a=0, b=0, c=0, s=0;
 
